@@ -1,31 +1,29 @@
  
 ###
-GET http://localhost:3001/ HTTP/1.1
+GET http://localhost:3000/tasks HTTP/1.1
 content-type: application/json
 
 
 ###
-POST http://localhost:3001/tasks HTTP/1.1
+POST http://localhost:3000/tasks HTTP/1.1
 content-type: application/json
 
 {
     "name": "some name",
-    "ingredians": "new ingredians",
-    "directions": "new directions"
+    "isComplete": false
 }
 
 
 ###
-PUT http://localhost:3001/tasks/8 HTTP/1.1
+PUT http://localhost:3000/tasks/2 HTTP/1.1
 content-type: application/json
 
 {
-    "name": "updated name",
-    "ingredians": "updated ingredians",
-    "directions": "updated directions"
+    "name": "some name",
+    "isComplete": true
 }
 
 
 ###
-DELETE http://localhost:3001/tasks/8 HTTP/1.1
+DELETE http://localhost:3000/tasks/3 HTTP/1.1
 content-type: application/json
